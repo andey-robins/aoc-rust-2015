@@ -31,7 +31,7 @@ fn calculate(input: &String) -> SolutionPair {
         let wh = w * h;
         let hl = h * l;
 
-        let mut smallest_perimeter = 0;
+        let smallest_perimeter: u64;
 
         let smallest_side = if lw < wh && lw < hl {
             smallest_perimeter = 2 * (l + w);
