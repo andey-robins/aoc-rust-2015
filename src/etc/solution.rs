@@ -1,7 +1,7 @@
 use std::fmt::{Display, Formatter, Result};
 use Solution::*;
 
-#[derive(Clone)]
+#[derive(Clone, Debug, PartialEq)]
 pub enum Solution {
     I8(i8),
     I16(i16),
@@ -45,7 +45,7 @@ macro_rules! impl_from {
                 Self::$kind_(sol)
             }
         }
-    }
+    };
 }
 
 impl_from!(i8, I8);
