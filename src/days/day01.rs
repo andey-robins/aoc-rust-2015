@@ -10,3 +10,5 @@ pub fn solve() -> SolutionPair {
 
     (Solution::from(sol1), Solution::from(sol2))
 }
+
+fn test() {}
